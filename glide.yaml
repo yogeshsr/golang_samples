@@ -1,0 +1,11 @@
+package: github.com/ysreedharan/golang_samples
+
+import:
+- package: github.com/sirupsen/logrus
+  version: ~1.0.4
+
+testImport:
+- package: github.com/stretchr/testify
+  version: ~1.1.4
+  subpackages:
+  - assert
