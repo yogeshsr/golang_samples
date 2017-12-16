@@ -12,7 +12,7 @@ func CreditPointsHandler(request Request, response Response) {
 // Finally writeResponse will write success/error to the response based on the status
 func (r *creditRequestImpl) CreditPointsHandler(request Request, response Response)  {
 	r.Init(request, response).
-		validateRequest().
+		validateRequest(). //seprated out into credit_request_validator.go
 		fetchWalletInfo().
 		createCreditPointRequest().
 		creditPoints().
