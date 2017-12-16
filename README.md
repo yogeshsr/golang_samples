@@ -9,7 +9,7 @@ Similarly other functions can be moved to individual files.
 
 	Note: everthing is under the same pakage and CreditPointsHandler is the public entry point.
 
-#Run tests
+# Run tests
 ```
 go test $(glide novendor)
 ```
